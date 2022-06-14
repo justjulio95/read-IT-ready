@@ -24,6 +24,11 @@ User.init(
     //Define username
     username: {
       type: DataTypes.STRING,
+      allowNull: false,  
+    },
+    // define email
+    email: {
+      type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
