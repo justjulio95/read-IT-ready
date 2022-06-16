@@ -69,22 +69,12 @@ router.post('/', (req, res) => {
 
 // UPVOTE route
 router.put('/upvote', (req, res) => {
-  Vote.create({
-    user_id: req.body.user_id,
-    post_id: req.body.post_id
+  Post.upvote(req.body, {Vote})
+  .then(updatedPostData => res.json(updatedPostData))
+  .catch(err => {
+    console.log(err);
+    res.status(400).json(err);
   })
-  .then(() => {
-    return Post.findOne({
-      where: {
-        id: req.body.post_id
-      },
-      attributes: ['id', 'title', 'description', 'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'),
-    'vote_count']]
-    })
-  })
-  .then(dbPostData => res.json(dbPostData))
-  .catch(err => res.json(err))
 })
 
 //!!!!!! We'll see about doing this.
