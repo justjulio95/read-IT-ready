@@ -1,75 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Registration</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="dist/output.css">
-      </head>
-      
-    <body>
-        <div class="font-sans antialiased bg-slate-500">
-            <!-- Top Nav -->
-            <div class="w-full bg-indigo-600 fixed shadow z-1">
-              <div class="container mx-auto">
-                <div class="w-full flex justify-between bg-indigo-600 items-center py-4 px-8">
-                  <!-- Brand -->
-                  <div> <img class="mx-auto h-12 w-auto" src="./assets/logo-crop.png" alt="Logo">
-                  </div>          
-                </div>
-              </div>
-            </div>
-          </div>
-<!-- Content -->
-<div class="w-full bg-grey-lightest" style="padding-top: 4rem;">
-  <div class="container mx-auto py-8">
-    <div class="w-5/6 lg:w-1/2 mx-auto bg-white rounded shadow">
-          <div class="bg-indigo-600 text-white py-4 px-8 text-black text-xl border-b border-grey-lighter">Register for an account</div>
-          <div class="py-4 px-8">
-              <div class="flex mb-4">
-                  <div class="w-1/2 mr-1">
-                      <label class="block text-grey-darker text-sm font-bold mb-2" for="first_name">First Name</label>
-                      <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="first_name" type="text" placeholder="Your first name">
-                  </div>
-                  <div class="w-1/2 ml-1">
-                      <label class="block text-grey-darker text-sm font-bold mb-2" for="last_name">Last Name</label>
-                      <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="last_name" type="text" placeholder="Your last name">
-                  </div>
-              </div>
-              <br>
-              <div class="mb-4">
-                  <label class="block text-grey-darker text-sm font-bold mb-2" for="email">Email Address</label>
-                  <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="email" placeholder="Your email address">
-              </div>
-              <br>
-              <div class="mb-4">
-                  <label class="block text-grey-darker text-sm font-bold mb-2" for="password">Password</label>
-                  <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="password" type="password" placeholder="Your secure password">
-                  <p class="text-grey text-xs mt-1">At least 6 characters</p>
-              </div>
-              <div class="flex items-center justify-center mt-8">
-                  <button class="bg-indigo-600 hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full justify-items-center" type="submit">
-                      Sign Up
-                  </button>
-              </div>
-          </div>
-      </div>
-      <p class="text-center my-4">
-          <a href="./index.html#login" class="text-grey-dark text-sm no-underline hover:text-grey-darker">I already have an account</a>
-      </p>
-  </div>
-</div>
-<br>
-<p class="text-grey-dark mb-2 text-center text-sm">This is a product of <span class="font-bold">Read-IT-Ready</span></p>
-</div>
 
- <!-- Footer Section-->
- <footer class="bg-white dark:text-gray-800">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Post</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+    <!-- Top Nav -->
+    <div class="w-full bg-indigo-600 fixed shadow z-1">
+      <div class="container mx-auto">
+        <div class="w-full flex justify-between bg-indigo-600 items-center py-4 px-8">
+          <!-- Brand -->
+          <div> <img class="mx-auto h-12 w-auto" src="./assets/logo-crop.png" alt="Logo">
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Search Bar-->
+  <div>
+   <form>   
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+    <div class="relative">
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <input type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required>
+        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+    </div>
+</form>  
+  </div>
+ 
+<!-- Footer Section-->
+<footer class="bg-white dark:text-gray-800">
   <div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-400">
     <ul class="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
       <li>About</li>
@@ -106,7 +76,5 @@
     </div>
   </div>
 </footer>
-
-
-    </body>
+</body>
 </html>
