@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="dist/output.css">
 </head>
 <body>
+  <!--Navigation Bar-->
   <div class="relative bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -26,8 +27,6 @@
               <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div class="flex items-center justify-between w-full md:w-auto">
                   <a href="#">
-                    <span class="sr-only">Workflow</span>
-                    <img alt="Workflow" class="h-12 w-auto sm:h-12" src="./assets/Logo.png">
                   </a>
                   <div class="-mr-2 flex items-center md:hidden">
                     <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
@@ -39,11 +38,6 @@
                     </button>
                   </div>
                 </div>
-              </div>
-              <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Submit a Question</a>
-  
-                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
               </div>
             </nav>
           </div>
@@ -87,7 +81,7 @@
             </div>
           </div>
         </div>
-  
+  <!--CTA-->
         <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
           <div class="sm:text-center lg:text-left">
             <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -97,7 +91,7 @@
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Do you feel stuck in your Bootcamp? Are you tired of spending ours searching the web for answers to WHY IS MY CODE NOT WORKING? We offered a community platform designed to answer all those pesky Bootcamp questions. You will be able to interact with current and former students..</p>
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
-                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"> Get started </a>
+                <a href="#login" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"> Get started </a>
               </div>
               <div class="mt-3 sm:mt-0 sm:ml-3">
               </div>
@@ -109,8 +103,58 @@
     <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
       <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
     </div>
+  </div> 
+  <!--Login-->
+<div id="login" class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8">
+    <div>
+      <img class="mx-auto h-13 w-auto" src="./assets/logo-crop.png" alt="Logo">
+      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+      <p class="mt-2 text-center text-sm text-gray-600">
+        Or
+        <a href="./registration.html" class="font-medium text-indigo-600 hover:text-indigo-500"> start your 30-day free trial </a>
+      </p>
+    </div>
+    <form class="mt-8 space-y-6" action="#" method="POST">
+      <input type="hidden" name="remember" value="true">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div>
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+        </div>
+        <div>
+          <label for="password" class="sr-only">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+          <label for="remember-me" class="ml-2 block text-sm text-gray-900"> Remember me </label>
+        </div>
+
+        <div class="text-sm">
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Forgot your password? </a>
+        </div>
+      </div>
+<br> 
+      <div>
+        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <!-- Heroicon name: solid/lock-closed -->
+            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+          </span>
+          Sign in
+        </button>
+      </div>
+    </form>
   </div>
- 
+</div>
+
+  <!-- Footer Section-->
   <footer class="bg-white dark:text-gray-800">
     <div class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-400">
       <ul class="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
