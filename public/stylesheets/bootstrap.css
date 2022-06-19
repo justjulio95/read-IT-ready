@@ -99,6 +99,38 @@
   width: 30% !important;
 }
 
+.login-form {
+  position: relative !important;
+  left: 15rem !important;
+  top: 10rem !important;
+}
+
+.signup-form {
+  position: relative;
+  left: 48rem;
+  bottom: 3rem;
+}
+
+.comment-form {
+  margin-bottom: 5% !important;
+}
+
+.comment {
+  padding: 1% !important;
+  margin-bottom: 1% !important;
+}
+
+.comment .meta {
+  font-size: 90% !important;
+  margin-bottom: .5% !important;
+  opacity: .6 !important;
+}
+
+.comment-text {
+  width: 33%;
+  height: 10rem;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

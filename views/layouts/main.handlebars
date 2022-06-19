@@ -16,18 +16,21 @@
         <input class="form-control me-sm-2" type="text" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>
+      {{#if loggedIn}}
       <button id="logout" class="btn btn-primary log">Logout</button>
+      {{else}}
       <a class="log" href="/login">Login</a>
+      {{/if}}
     </div>
   </nav>
 
   <main>
     {{{ body }}}
   </main>
-  <footer>
-    Thanks for visiting!
-  </footer>
+
+  {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
