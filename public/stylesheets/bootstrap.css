@@ -131,6 +131,62 @@
   height: 10rem;
 }
 
+.new-post-form input {
+  display: block !important;
+  font-size: xx-large !important;
+}
+
+.center {
+  position: absolute;
+  top: 25%;
+  left: 41%
+}
+
+.dashboard {
+  position: absolute !important;
+  top: 35rem !important;
+}
+
+.edit-description {
+  width: 30% !important;
+}
+
+#description {
+  position: absolute !important;
+  top: 12rem;
+  left: 0rem !important;
+  width: 100%;
+  height: 67%
+}
+
+.edit-description {
+  position: absolute;
+  top: 13rem !important;
+  width: 30% !important;
+  height: 25% !important
+}
+
+.edit-save {
+  position: absolute;
+  top: 26rem;
+}
+
+.edit-delete {
+  position: absolute;
+  top: 26rem;
+  left: 10rem;
+}
+
+.edit-comments {
+  position: absolute;
+  top: 30rem
+}
+
+.post {
+  position: absolute !important;
+  top: 22rem !important;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
