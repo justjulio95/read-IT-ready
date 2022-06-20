@@ -1,0 +1,11 @@
+<article>
+  <div class="title">
+    <a href="/post/{{id}}" target="_blank">{{title}}</a>
+  </div>
+  <div class="description">{{description}}</div>
+  <div class="meta">
+    {{vote_count}} {{format_plural "vote" vote_count}} by {{user.username}} on {{format_date created_at}}
+    |
+    {{comments.length}} {{format_plural "comment" comments.length}}
+  </div>
+</article>
